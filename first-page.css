@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkblue;
+}
+.Members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 650px;
+    height: 500px;
+    flex-direction: column;
+    font-family: 'poppins',sans-serif;
+    border-radius: 21px;
+}
+
+.Members h2 {
+    font-size: 45px;
+    color: red;
+}
+
+.Members h4 {
+    letter-spacing: 5px;
+    color: rgb(38, 0, 255);
+    font-size: 25px;
+}
+
+.Members h5 {
+    letter-spacing: 1px;
+    color: rgb(71, 0, 151);
+    font-size: 18px;
+    margin-top: 1px;
+    text-transform: uppercase;
+}
+
+ p {
+    background: red;
+    width: 1000px;
+    z-index: 1;
+    position: absolute;
+    top: 500px;
+    font-size: 20px;
+    color: white;
+    font-family: 'poppins',sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+}
+
+button {
+    height: 100px;
+    width: 200px;
+    border-radius: 30px;
+    background: aqua;
+    font-size: 30px;
+}
+
+button a {
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+}

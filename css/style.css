@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(102, 102, 102);
+    display: flex;
+    height: 100vh;
+}
+p {
+    z-index: 100;
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    display: absolute;
+    position: sticky;
+    z-index: 100;
+}
+
+header .top {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to right,rgb(255, 72, 0), orange ) ;
+    display: flex;
+}
+
+header .top .leftNav a img{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 200px;
+    height: 80px;
+}
+header .top .rightNav {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .top .rightNav .info {
+    position:absolute;
+    right: 5px;
+    top: 15px;
+    height: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .top .rightNav .info ul {
+    display: flex;
+    position: relative;
+    width: 450px;
+}
+
+header .top .rightNav .info ul li {
+    margin-right: 90px;
+    display: block;
+    font-size: 15px;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+}
+header .top .rightNav .info ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+header .top .rightNav .info ul li a ion-icon{
+    margin-right: 7px;
+}
+header .top .rightNav .enter {
+    position:absolute;
+    right: 5px;
+    top: 35px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .top .rightNav .enter ul{
+    display: flex;
+    position: relative;
+    width: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .top .rightNav .enter ul li {
+    margin-right: 15px;
+    display: inline-flex;
+    height: 25px;
+    background-color: #fff;
+    border:1px solid #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+header .top .rightNav .enter ul li ion-icon {
+    margin-right: 6px;
+    height: 25px;
+    background: #fff;
+}
+
+header .top .rightNav .enter ul li .login {
+
+    display: block;
+    position:static;
+    cursor: pointer;
+    margin-left: 3px;
+    border: transparent;
+    background: linear-gradient(to right,rgb(255, 72, 0), orange ) ;
+    color: rgb(43, 43, 43);
+    font-size: 16px;
+    font-weight: bold;
+    height: 28px;
+    width: 60px;
+}
+
+header .top .lower {
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background: rgb(0,0,0);
+    top: 90px;
+    align-items: center;
+    justify-content: center;
+}
+header .top .lower .leftNav {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+}
+
+header .top .lower .leftNav ul {
+    display: flex;
+    position: relative;
+}
+
+header .top .lower .leftNav ul li {
+    margin-right: 30px;
+    display: inline-block;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+    text-shadow: 3px 2px 1px rgba(169, 169, 169, 0.295);
+    
+}
+
+header .top .lower .leftNav ul li a{
+    text-decoration: none;
+    color: #acabab;
+}
+
+header .top .lower .leftNav ul li ion-icon {
+    margin-right: 5px;
+    color: #fff;
+}
+
+header .top .lower .leftNav ul li a:hover{
+    color: #fff;
+    height: 100%;
+    width: 25px;
+    border-bottom: 4px solid #acabab;
+}
+
+
+header .top .lower .rightNav {
+    display: flex;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    top: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .top .lower .rightNav ul {
+    display: flex;
+    position: relative;
+    height: 100%;
+    top: 1px;
+}
+
+header .top .lower .rightNav ul li {
+    
+    margin-right: 30px;
+    display: inline-block;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+}
+header .top .lower .rightNav ul li .register {
+    position:relative;
+    color: #000;
+    height: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    bottom: 1px;
+    background: gold;
+    border: none;
+    width: 100%;
+    margin-right: 15px;
+}
+
+header .top .lower .rightNav ul li .register ion-icon {
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
+    width: 1.1rem;
+    height: 1.1rem;
+    color: #000;
+}
+
+header .top .lower .rightNav ul li a{
+    text-decoration: none;
+    color: #949494;
+    height: 100%;
+    font-size: 1.1rem;
+    align-self: center;
+}
+
+header .top .lower .rightNav ul li a ion-icon {
+    position: relative;
+    top: 3.9px;
+    margin-right: 5px;
+    color: #fff;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+header .top .lower .rightNav ul li a:hover {
+    height: 100%;
+    width: 120%;
+    border: none;
+    color: #fff;
+}
+header .top .lower .rightNav ul li:hover {
+    
+    border-bottom: 3px solid #acabab;
+}
+header .top .lower .rightNav ul .clock {
+    display: flex;
+    position: relative;
+    align-self: center;
+    color: rgb(255, 0, 0);
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+header .top .lower .rightNav ul .clock #hour {
+    margin-right: 5px;
+}
+header .top .lower .rightNav ul .clock #minutes {
+    margin-right: 5px;
+}
+header .top .lower .rightNav ul .clock #seconds {
+    margin-right: 5px;
+}
+
+
+.underTop {
+    display:flex;
+    position:absolute;
+    height: 150px;
+    width: 100%;
+    top: 120px;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.underTop img{
+    width: 1350px;
+    height: 150px;
+}
+
+.wholePage {
+    background-color: rgb(71, 71, 71);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 270px;
+    z-index: 0;
+}
+
+.wholePage .Sec_Left_Nav{
+    height: 100%;
+    width: 280px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+.wholePage .Sec_Left_Nav .leftTop{
+    width: 100%;
+    background: rgb(36, 35, 35);
+    height: 40px;
+}
+
+.wholePage .Sec_Left_Nav .leftTop ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.wholePage .Sec_Left_Nav .leftTop ul li {
+    display: flex;
+    height: 40px;
+    font-size: 25px;
+    width: calc(280px/6);
+}
+
+.wholePage .Sec_Left_Nav .leftTop ul li button{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+    width: 110%;
+    cursor: pointer;
+}
+
+.wholePage .Sec_Left_Nav .leftTop ul li button:hover{
+    background-color: rgb(255, 153, 0);
+    color: black;
+}
+.wholePage .Sec_Left_Nav .Leagues {
+    background: rgb(255, 153, 0);
+    height: 40px;
+    margin-top: 15px;
+    display: flex;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+
+.wholePage .Sec_Left_Nav .Leagues ul {
+    display: flex;
+    position: absolute;
+    left: 20px;
+}
+
+.wholePage .Sec_Left_Nav .Leagues ul li {
+    display: flex;
+    font-size: 20px;
+    font-family: 'poppins',sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.wholePage .Sec_Left_Nav .Leagues ul li ion-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 7px;
+}
+
+.wholePage .Sec_Left_Nav .Favorites{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    top: 97px;
+    z-index: 100;
+    background: rgb(255, 255, 255, .6);
+}
+
+.wholePage .Sec_Left_Nav .Favorites ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 5px;
+    top: 10px;
+    justify-content: center;
+}
+.wholePage .Sec_Left_Nav .Favorites ul li{
+    display: flex;
+    z-index: 10;
+    margin-bottom: 5px;
+    height: calc(300px / 9);
+    font-size: 20px;
+    font-family: 'poppins',sans-serif;
+    font-weight: 700;
+    justify-self: center;
+}
+.wholePage .Sec_Left_Nav .Favorites ul li a{
+    color: #000;
+    text-decoration: none;
+}
+.wholePage .Sec_Left_Nav .Favorites ul li img{
+    width: 30px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-top: 7px;
+}
+
+.wholePage .Sec_Left_Nav .Favorites ul li:hover{
+    background: linear-gradient(to right, rgb(255, 94, 0),rgb(255, 136, 0) ) ;
+    width: 100%;
+}
+
+.wholePage .Sec_Right_Nav{
+    height: 120%;
+    width: 360px;
+    background: rgb(255, 255, 255, .6);
+    position: absolute;
+    top: 25px;
+    margin-bottom: 15px;
+    right: 15px;
+}
+
+
+.wholePage .Sec_Right_Nav .rightTop{
+    width: 100%;
+    background: black;
+    height: 40px;
+}
+
+.wholePage .Sec_Right_Nav .rightTop ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-bottom: 2px solid #ff0000;
+}
+
+.wholePage .Sec_Right_Nav .rightTop ul li {
+    display: flex;
+    height: 40px;
+    font-size: 25px;
+    width: calc(196px/3);
+}
+
+.wholePage .Sec_Right_Nav .rightTop ul li button{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+    width: 110%;
+    cursor: pointer;
+}
+
+.wholePage .Sec_Right_Nav .rightTop ul li button:hover{
+    background: linear-gradient(to right, rgb(255, 94, 0),rgb(255, 136, 0) ) ;
+    
+}
+.wholePage .Sec_Right_Nav .rightBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.wholePage .Sec_Right_Nav .rightBottom ul {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.wholePage .Sec_Right_Nav .rightBottom ul li{
+    display: flex;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.wholePage .Sec_Right_Nav .rightBottom ul li h3 {
+    font-size: 28px;
+    display: flex;
+    font-family: 'poppins',sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.wholePage .Sec_Right_Nav .rightBottom ul li h4{
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'poppins',sans-serif;
+}
+
+.wholePage .Sec_Right_Nav .rightBottom ul li .coupon{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 15px;
+    padding-left: 15px;
+    border: none;
+    color: green;
+}
+.wholePage .Sec_Right_Nav .rightBottom ul li button {
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: linear-gradient(to right, rgb(255, 94, 0),rgb(255, 174, 0) ) ;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 3px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.wholePage .Sec_Right_Nav .rightBottom .matches {
+    position: absolute;
+    margin-top: 30px;
+    background: rgb(255, 153, 0);
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 35px;
+}
+
+.wholePage .Sec_Right_Nav .rightBottom .matches #text{
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    position:absolute;
+    left: 15px;
+}
+.wholePage .Sec_Right_Nav .rightBottom .matches #counter{
+    color: #000;
+    font-size: 18px;
+    display: flex;
+    position: absolute;
+    left: 115px;
+}
+
+.wholePage .centerNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 700px;
+    width: 650px;
+    background: rgb(216, 208, 208);
+    left: 310px;
+    top: 25px;
+}
+
+.wholePage .centerNav .centerTop {
+    width: 650px;
+    height:40px;
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+.wholePage .centerNav .centerTop  ul {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: rgb(255, 104, 3);
+}
+
+.wholePage .centerNav .centerTop  ul li {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins',sans-serif;
+    height: 100%;
+    width: 100px;
+}
+.wholePage .centerNav .centerTop  ul li a:hover {
+    background:rgb(250, 171, 0);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    color: black;
+}
+
+.wholePage .centerNav .centerTop  ul li a{
+    color: #000000;
+    text-align: center;
+    width: 120px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    font-weight: 700;
+}
+.wholePage .centerNav .centerTop  ul a .search {
+    height: 100%;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    right: 600;
+    width: 140px;
+    background-color: rgba(255, 145, 0, 0.719);
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding-left: 10px;
+}
+
+.wholePage .centerNav .centerTop  ul span{
+    position: absolute;
+    right: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgba(255, 145, 0, 0.719);
+    width: 40px;
+    height: 100%;
+}
+.wholePage .centerNav .centerTop  ul span ion-icon {
+    color: #fff;
+    cursor: pointer;
+}
